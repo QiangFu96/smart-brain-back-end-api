@@ -33,7 +33,7 @@ app.use(cors());
 
 
 
-
+app.get('/',(req,res) => {res.send(database.users)})
 //signin
 app.post('/signin', signin.handleSignin(db,bcrypt))
 
